@@ -1,0 +1,81 @@
+\documentclass[12pt,a4paper]{article}
+
+% Pacotes básicos
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazil]{babel}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{natbib}
+\usepackage{geometry}
+\usepackage{setspace}
+
+% Configurações
+\geometry{margin=2.5cm}
+\onehalfspacing
+
+% Informações do artigo
+\title{\textbf{Título do Seu Paper}}
+\author{Nome do Autor\thanks{Email: autor@email.com}}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Resumo do seu paper. Descreva brevemente o objetivo, metodologia, 
+resultados principais e conclusões. Mantenha entre 150-250 palavras.
+
+\textbf{Palavras-chave:} palavra1, palavra2, palavra3
+\end{abstract}
+
+\section{Introdução}
+\label{sec:intro}
+
+Inclua a introdução aqui. Você pode usar \cite{autor2024} para citar referências.
+
+\input{sections/intro}
+
+\section{Metodologia}
+\label{sec:metodo}
+
+Descreva sua metodologia. Equações podem ser incluídas assim:
+
+\begin{equation}
+    E = mc^2
+    \label{eq:einstein}
+\end{equation}
+
+\input{sections/methods}
+
+\section{Resultados}
+\label{sec:resultados}
+
+Apresente seus resultados. Figuras podem ser incluídas:
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures/exemplo.png}
+    \caption{Legenda da figura}
+    \label{fig:exemplo}
+\end{figure}
+
+\input{sections/results}
+
+\section{Discussão}
+\label{sec:discussao}
+
+Discuta os resultados e suas implicações.
+
+\section{Conclusão}
+\label{sec:conclusao}
+
+Apresente as conclusões principais e trabalhos futuros.
+
+% Bibliografia
+\bibliographystyle{apalike}
+\bibliography{references}
+
+\end{document}

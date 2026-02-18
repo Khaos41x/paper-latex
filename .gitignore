@@ -1,0 +1,31 @@
+# Arquivos compilados
+*.pdf
+*.dvi
+*.ps
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+*.lot
+*.lof
+*.idx
+*.ind
+*.ilg
+*.synctex.gz
+*.synctex(busy)
+
+# Editor
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
+
+# Temporários
+*.tmp
+*.bak
